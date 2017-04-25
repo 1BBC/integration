@@ -9,9 +9,9 @@ if (!isset($_POST['name']) || !isset($_POST['phone']))
 try{
     $api_connector = new CApiConnector();
     $lead = $api_connector->create(array(
-        'name' 			=> $_POST['name'],
-        'phone' 		=> $_POST['phone'],
-        'offer_id'  	=>  '14491',                                                          		// Тут має бути offer_id товара, його можна знайти в ПК
+        'name'			=> $_POST['name'],
+        'phone'			=> $_POST['phone'],
+        'offer_id'		=>  '14491',                                                          		// Тут має бути offer_id товара, його можна знайти в ПК
         'stream_id' 	=> '12546',                                                    				// Тут, за потребою, ти можеш вказати стрім
         'country' 		=>  'IT',                                                               	// Вказуємо код країну в форматі https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
         'tz' 			=> '',
