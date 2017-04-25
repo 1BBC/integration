@@ -11,9 +11,9 @@ try{
 	$lead = $api_connector->create(array(
 		'name'			=> $_POST['name'],
 		'phone'			=> $_POST['phone'],
-		'offer_id'		=>  '14491',                                                          		// Тут має бути offer_id товара, його можна знайти в ПК
+		'offer_id'		=> '14491',                                                          		// Тут має бути offer_id товара, його можна знайти в ПК
 		'stream_id'		=> '12546',                                                    				// Тут, за потребою, ти можеш вказати стрім
-		'country' 		=>  'IT',                                                               	// Вказуємо код країну в форматі https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+		'country' 		=> 'IT',                                                               	// Вказуємо код країну в форматі https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 		'tz' 			=> '',
 		'address' 		=> '',
 		'utm_source'	=> isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
