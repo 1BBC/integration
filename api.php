@@ -12,21 +12,21 @@ try{
         'name'			=> $_POST['name'],
         'phone'			=> $_POST['phone'],
         'offer_id'		=>  '14491',                                                          		// Тут має бути offer_id товара, його можна знайти в ПК
-        'stream_id' 	=> '12546',                                                    				// Тут, за потребою, ти можеш вказати стрім
+        'stream_id'		=> '12546',                                                    				// Тут, за потребою, ти можеш вказати стрім
         'country' 		=>  'IT',                                                               	// Вказуємо код країну в форматі https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
         'tz' 			=> '',
         'address' 		=> '',
-        'utm_source'    => isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
-        'utm_medium'    => isset($_GET['utm_medium'])	? $_GET['utm_medium'] 	: null,
-        'utm_campaign'  => isset($_GET['utm_campaign'])	? $_GET['utm_campaign'] : null,
-        'utm_term'      => isset($_GET['utm_term'])		? $_GET['utm_term'] 	: null,
-        'utm_content'   => isset($_GET['utm_content'])	? $_GET['utm_content'] 	: null,
+        'utm_source'	=> isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
+        'utm_medium'	=> isset($_GET['utm_medium'])	? $_GET['utm_medium'] 	: null,
+        'utm_campaign'	=> isset($_GET['utm_campaign'])	? $_GET['utm_campaign'] : null,
+        'utm_term'		=> isset($_GET['utm_term'])		? $_GET['utm_term'] 	: null,
+        'utm_content'	=> isset($_GET['utm_content'])	? $_GET['utm_content'] 	: null,
 
-        'sub_id'        => isset($_GET['sub_id'])		? $_GET['sub_id'] 		: null,
-        'sub_id_1'      => isset($_GET['sub_id_1'])		? $_GET['sub_id_1'] 	: null,
-        'sub_id_2'      => isset($_GET['sub_id_2'])		? $_GET['sub_id_2'] 	: null,
-        'sub_id_3'      => isset($_GET['sub_id_3'])		? $_GET['sub_id_3'] 	: null,
-        'sub_id_4'      => isset($_GET['sub_id_4'])		? $_GET['sub_id_4'] 	: null,
+        'sub_id'		=> isset($_GET['sub_id'])		? $_GET['sub_id'] 		: null,
+        'sub_id_1'		=> isset($_GET['sub_id_1'])		? $_GET['sub_id_1'] 	: null,
+        'sub_id_2'		=> isset($_GET['sub_id_2'])		? $_GET['sub_id_2'] 	: null,
+        'sub_id_3'		=> isset($_GET['sub_id_3'])		? $_GET['sub_id_3'] 	: null,
+        'sub_id_4'		=> isset($_GET['sub_id_4'])		? $_GET['sub_id_4'] 	: null,
     ));
 
 }catch (Exception $e) {
