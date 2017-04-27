@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!isset($_POST['name']) || !isset($_POST['phone']))
     if (isset($_SERVER['HTTP_REFERER']))
         header("Location: ".$_SERVER['HTTP_REFERER']);
