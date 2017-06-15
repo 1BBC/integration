@@ -12,8 +12,8 @@ try{
 		'name'			=> $_POST['name'],
 		'phone'			=> $_POST['phone'],
 		'offer_id'		=> '14491',                         // offer_id из ЛК
-		'stream_id'		=> '12546',                         // Опционально указывается id потока
-		'country' 		=> 'IT',                            // Страна в формате https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+		'stream_id'		=> '12546',                         // Optional, stream_id 
+		'country' 		=> 'IT',                            // Country in format https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 		'tz' 			=> '',
 		'address' 		=> '',
 		'utm_source'	=> isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
@@ -40,8 +40,8 @@ try{
 class CApiConnector
 {
     public $config = array(
-        'api_key' => '19494ce5468e89b2eb3e3ab4ed89c6e8',                                     		// api_key пользователя
-        'user_id' =>  '2889',                                                              			// user_id пользователя
+        'api_key' => '19494ce5468e89b2eb3e3ab4ed89c6e8',                                     		// api_key of user
+        'user_id' =>  '2889',                                                              		// user_id
         'create_url' => 'http://tl-api.com/api/lead/create',
         'update_url' => 'http://tl-api.com/api/lead/update',
         'status_url' => 'http://tl-api.com/api/lead/status',
