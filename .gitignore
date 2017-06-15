@@ -1,0 +1,10 @@
+*~
+.svn
+.idea
+jss
+#templates
+aggregator
+waplogs
+/nbproject/
+/webstat/
+/git-hook-update/
