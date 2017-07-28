@@ -40,8 +40,8 @@ try{
 class CApiConnector
 {
     public $config = array(
-        'api_key' => '19494ce5468e89b2eb3e3ab4ed89c6e8',                                     		// api_key of user
-        'user_id' =>  '2889',                                                              		// user_id
+        'api_key' => '19494ce5468edfgsdfffdd3ab4ed89c6e8',                                     		// api_key of user
+        'user_id' =>  '1234',                                                              		// user_id
         'create_url' => 'http://tl-api.com/api/lead/create',
         'update_url' => 'http://tl-api.com/api/lead/update',
         'status_url' => 'http://tl-api.com/api/lead/status',
