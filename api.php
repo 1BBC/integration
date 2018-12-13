@@ -16,6 +16,10 @@ try{
 		'country' 		=> 'IT',                            // Country in format https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 		'tz' 			=> '',
 		'address' 		=> '',
+		'city'			=> $_GET['city'] ?? null,
+		'count'			=> $_GET['count'] ?? null,
+		'referer'		=> $_GET['referer'] ?? $_SERVER['HTTP_REFERER'] ?? null,
+		
 		'utm_source'	=> isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
 		'utm_medium'	=> isset($_GET['utm_medium'])	? $_GET['utm_medium'] 	: null,
 		'utm_campaign'	=> isset($_GET['utm_campaign'])	? $_GET['utm_campaign'] : null,
@@ -62,7 +66,7 @@ class CApiConnector
             $allow_params = array(
                 "name", "country", "phone", "tz", "offer_id", "stream_id", "address",
                 "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-                "sub_id", "sub_id_1", "sub_id_2", "sub_id_3", "sub_id_4",
+                "sub_id", "sub_id_1", "sub_id_2", "sub_id_3", "sub_id_4", 'referer', 'city', 'count'
             );
 
             foreach ($params as $param_key => $param_value){
