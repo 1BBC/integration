@@ -11,13 +11,13 @@ try{
 	$lead = $api_connector->create(array(
 		'name'			=> $_POST['name'],
 		'phone'			=> $_POST['phone'],
+		'city'			=> $_POST['city'] ?? null,
+		'count'			=> $_POST['count'] ?? null,
 		'offer_id'		=> '14491',                         // offer_id из ЛК
 		'stream_id'		=> '12546',                         // Optional, stream_id 
 		'country' 		=> 'IT',                            // Country in format https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 		'tz' 			=> '',
 		'address' 		=> '',
-		'city'			=> $_GET['city'] ?? null,
-		'count'			=> $_GET['count'] ?? null,
 		'referer'		=> $_GET['referer'] ?? $_SERVER['HTTP_REFERER'] ?? null,
 		
 		'utm_source'	=> isset($_GET['utm_source'])	? $_GET['utm_source'] 	: null,
